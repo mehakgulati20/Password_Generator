@@ -1,27 +1,21 @@
-# 📝 To-Do List App (Tkinter GUI)
+# 🔐 Password Generator
 
-This is a simple Python GUI-based To-Do List application built using the `tkinter` library. It allows users to add, delete, and mark tasks as completed in a straightforward graphical interface.
+A simple and customizable password generator written in Python. This script creates secure passwords using lowercase letters, numbers, and uppercase characters to help you stay protected online.
 
-## 📦 Features
+## 📌 Features
 
-- ➕ Add new tasks via a pop-up window
-- 🗑️ Delete selected tasks from the list
-- ✅ Mark tasks as completed (adds a check symbol ✔)
-- 🧼 Clear all completed tasks
-- 💾 Interactive and user-friendly interface
+- Generate multiple passwords at once
+- Randomly inserts numbers and capital letters for better complexity
+- Customizable password lengths
 
-## 🖼️ GUI Preview
+## 🧠 How It Works
 
-The application opens a simple window with the following:
-- A listbox showing all current tasks
-- Buttons for adding, deleting, marking as complete, and clearing completed tasks
+1. A base password is generated using random lowercase letters.
+2. Some letters are replaced with numbers at random positions.
+3. A few letters are capitalized at random to improve strength.
 
-## 🛠️ How to Run
+### Example
 
-Make sure you have Python installed on your system.
-
-1. Clone this repository or download the `to_do_list.py` file.
-2. Run the file using:
-
-```bash
-python to_do_list.py
+```python
+>>> generatePassword([8, 10, 12])
+['b5mUwqaz', 'q2lMbvXeRa', 'nm3xDytPrEwQ']
